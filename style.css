@@ -1,0 +1,201 @@
+:root {
+    --forest: #123b31;
+    --forest-deep: #0c2a24;
+    --leaf: #59c785;
+    --ink: #18342d;
+    --muted: #63746e;
+    --mist: #f2f7f3;
+}
+
+body {
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.65;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-navbar {
+    background: var(--forest-deep);
+}
+
+.brand-accent {
+    color: var(--leaf);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .78);
+    padding-inline: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.hero-slide {
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: var(--forest);
+}
+
+.hero-sun {
+    background: radial-gradient(circle at 78% 28%, rgba(255, 215, 112, .85) 0 7%, transparent 7.5%), linear-gradient(125deg, #143d30 15%, #267552 68%, #8bcf7b);
+}
+
+.hero-wind {
+    background: radial-gradient(ellipse at 90% 105%, #a7d47e 0 28%, transparent 28.5%), linear-gradient(125deg, #153d38, #277c83);
+}
+
+.hero-green {
+    background: radial-gradient(ellipse at 90% 110%, #7ebc68 0 34%, transparent 34.5%), linear-gradient(125deg, #173c30, #3c8660);
+}
+
+.hero-content {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+.hero-content h1,
+.hero-content h2 {
+    max-width: 760px;
+    font-size: clamp(2.5rem, 6vw, 4.8rem);
+    font-weight: 750;
+    line-height: 1.08;
+    letter-spacing: -.04em;
+}
+
+.hero-copy {
+    max-width: 550px;
+    margin: 1.25rem 0 1.75rem;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, .88);
+}
+
+.eyebrow {
+    color: #dcf4e3;
+    font-size: .78rem;
+    font-weight: 750;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-title {
+    max-width: 760px;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    font-weight: 720;
+    letter-spacing: -.035em;
+}
+
+.feature-card {
+    padding: 1.75rem;
+    border: 1px solid #e2ebe4;
+    border-radius: 1rem;
+    background: #fff;
+}
+
+.feature-icon {
+    display: inline-grid;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    place-items: center;
+    border-radius: .9rem;
+    background: #e7f5ea;
+    color: #237746;
+    font-size: 1.6rem;
+}
+
+.page-hero {
+    padding: 4.5rem 0;
+    color: #fff;
+    background: linear-gradient(115deg, var(--forest-deep), #28704d);
+}
+
+.page-hero h1 {
+    max-width: 800px;
+    margin-bottom: .8rem;
+    font-size: clamp(2.2rem, 5vw, 3.7rem);
+    font-weight: 750;
+    letter-spacing: -.04em;
+}
+
+.page-hero .lead {
+    max-width: 720px;
+    color: rgba(255, 255, 255, .82);
+}
+
+.energy-art {
+    display: block;
+    width: 100%;
+    border-radius: 1.25rem;
+}
+
+.soft-section {
+    background: var(--mist);
+}
+
+.source-card {
+    overflow: hidden;
+    border: 1px solid #e4ece5;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(16, 53, 39, .05);
+}
+
+.source-art {
+    display: grid;
+    min-height: 175px;
+    place-items: center;
+    font-size: 4rem;
+}
+
+.source-solar { background: linear-gradient(135deg, #fff2c8, #f9c66c); color: #9b6419; }
+.source-wind { background: linear-gradient(135deg, #dff3f2, #8bc9ca); color: #28757a; }
+.source-water { background: linear-gradient(135deg, #dcedf9, #83bce0); color: #246b9a; }
+.source-biomass { background: linear-gradient(135deg, #e2f1d9, #8fbd78); color: #326d3d; }
+.source-geothermal { background: linear-gradient(135deg, #f9e2d8, #df9b7f); color: #a34c35; }
+.source-ocean { background: linear-gradient(135deg, #d9edee, #72b6b5); color: #236d72; }
+
+.contact-card {
+    padding: clamp(1.25rem, 4vw, 2.5rem);
+    border: 1px solid #e2ebe4;
+    border-radius: 1rem;
+    box-shadow: 0 10px 32px rgba(16, 53, 39, .07);
+}
+
+.form-note {
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+.site-footer {
+    padding: 1.5rem 0;
+    color: rgba(255, 255, 255, .76);
+    background: var(--forest-deep);
+    font-size: .92rem;
+}
+
+.site-footer a {
+    color: #a9e4ba;
+}
+
+@media (max-width: 575.98px) {
+    .hero-slide {
+        min-height: 500px;
+    }
+
+    .hero-content {
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+    }
+
+}

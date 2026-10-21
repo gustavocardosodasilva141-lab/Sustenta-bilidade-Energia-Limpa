@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conheça seis fontes de energia renovável e suas aplicações.">
+    <title>Energia Viva | Galeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Energia<span class="brand-accent">Viva</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="siteNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre o tema</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dados.html">Dados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Catálogo de fontes</p>
+                <h1>Natureza em movimento</h1>
+                <p class="lead mb-0">Explore diferentes formas de aproveitar recursos renováveis. Selecione “Saiba mais” para ver um resumo.</p>
+            </div>
+        </header>
+        <section class="container section-padding">
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card source-card h-100">
+                        <div class="source-art source-solar" aria-hidden="true"><span>☀</span></div>
+                        <div class="card-body d-flex flex-column"><h2 class="h5">Solar</h2><p class="text-secondary">A luz do sol pode ser convertida em eletricidade ou calor.</p><button class="btn btn-outline-success mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#solarModal">Saiba mais</button></div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card source-card h-100">
+                        <div class="source-art source-wind" aria-hidden="true"><span>✳</span></div>
+                        <div class="card-body d-flex flex-column"><h2 class="h5">Eólica</h2><p class="text-secondary">Turbinas transformam a energia do vento em eletricidade.</p><button class="btn btn-outline-success mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#windModal">Saiba mais</button></div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card source-card h-100">
+                        <div class="source-art source-water" aria-hidden="true"><span>≈</span></div>
+                        <div class="card-body d-flex flex-column"><h2 class="h5">Hidrelétrica</h2><p class="text-secondary">O movimento da água aciona turbinas para gerar energia.</p><button class="btn btn-outline-success mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#waterModal">Saiba mais</button></div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card source-card h-100">
+                        <div class="source-art source-biomass" aria-hidden="true"><span>♧</span></div>
+                        <div class="card-body d-flex flex-column"><h2 class="h5">Biomassa</h2><p class="text-secondary">Matéria orgânica pode ser aproveitada para produzir energia.</p><button class="btn btn-outline-success mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#biomassModal">Saiba mais</button></div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card source-card h-100">
+                        <div class="source-art source-geothermal" aria-hidden="true"><span>♨</span></div>
+                        <div class="card-body d-flex flex-column"><h2 class="h5">Geotérmica</h2><p class="text-secondary">O calor interno da Terra pode ser usado para aquecimento e geração.</p><button class="btn btn-outline-success mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#geoModal">Saiba mais</button></div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card source-card h-100">
+                        <div class="source-art source-ocean" aria-hidden="true"><span>〰</span></div>
+                        <div class="card-body d-flex flex-column"><h2 class="h5">Energia oceânica</h2><p class="text-secondary">Ondas e marés oferecem caminhos para aproveitar a energia do mar.</p><button class="btn btn-outline-success mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#oceanModal">Saiba mais</button></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="solarModal" tabindex="-1" aria-labelledby="solarTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="solarTitle">Energia solar</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div><div class="modal-body">Painéis fotovoltaicos convertem luz em eletricidade. Sistemas solares térmicos aproveitam o calor para aquecer água. A geração pode ocorrer em telhados ou em usinas.</div><div class="modal-footer"><button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button></div></div></div></div>
+    <div class="modal fade" id="windModal" tabindex="-1" aria-labelledby="windTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="windTitle">Energia eólica</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div><div class="modal-body">O vento movimenta as pás de aerogeradores, que acionam um gerador elétrico. Parques podem ser instalados em terra ou no mar, em locais com ventos adequados.</div><div class="modal-footer"><button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button></div></div></div></div>
+    <div class="modal fade" id="waterModal" tabindex="-1" aria-labelledby="waterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="waterTitle">Energia hidrelétrica</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div><div class="modal-body">Usinas aproveitam a força ou o fluxo da água para movimentar turbinas. O planejamento deve considerar os ecossistemas, os territórios e as comunidades locais.</div><div class="modal-footer"><button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button></div></div></div></div>
+    <div class="modal fade" id="biomassModal" tabindex="-1" aria-labelledby="biomassTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="biomassTitle">Biomassa</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div><div class="modal-body">Resíduos agrícolas, florestais e orgânicos podem ser convertidos em calor, eletricidade ou biocombustíveis. A origem sustentável da matéria-prima é fundamental.</div><div class="modal-footer"><button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button></div></div></div></div>
+    <div class="modal fade" id="geoModal" tabindex="-1" aria-labelledby="geoTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="geoTitle">Energia geotérmica</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div><div class="modal-body">O calor armazenado no subsolo pode ser usado diretamente ou convertido em eletricidade. A viabilidade depende das condições geológicas de cada região.</div><div class="modal-footer"><button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button></div></div></div></div>
+    <div class="modal fade" id="oceanModal" tabindex="-1" aria-labelledby="oceanTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-5" id="oceanTitle">Energia oceânica</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div><div class="modal-body">Tecnologias experimentais e em desenvolvimento buscam converter o movimento das ondas e das marés em eletricidade, respeitando a vida marinha e a navegação.</div><div class="modal-footer"><button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendi</button></div></div></div></div>
+
+    <footer class="site-footer"><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>Energia Viva — informação para um futuro sustentável.</span><span>Feito com Bootstrap 5 · <a href="contato.html">Fale conosco</a></span></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

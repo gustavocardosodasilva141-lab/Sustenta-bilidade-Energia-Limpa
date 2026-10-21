@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Energia renovável</title>
+  <desc id="desc">Paisagem verde com turbinas eólicas, sol e painéis solares.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a9dfe0"/>
+      <stop offset="1" stop-color="#edf3d6"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#87bd76"/>
+      <stop offset="1" stop-color="#397950"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="28" fill="url(#sky)"/>
+  <circle cx="625" cy="135" r="62" fill="#ffd36c"/>
+  <path d="M0 367c126-85 236-81 365-10s255 59 435-24v267H0z" fill="#a9ce8a"/>
+  <path d="M0 434c145-79 285-36 407 18s250 40 393-31v179H0z" fill="url(#hill)"/>
+  <g fill="#fff" stroke="#fff" stroke-linecap="round" stroke-width="9">
+    <path d="M211 393V188"/>
+    <circle cx="211" cy="188" r="10"/>
+    <path d="M211 188l-9-105M211 188l92-47M211 188l-89 50"/>
+    <path d="M390 414V241"/>
+    <circle cx="390" cy="241" r="9"/>
+    <path d="M390 241l-8-89M390 241l78-40M390 241l-76 43"/>
+  </g>
+  <g transform="translate(478 399) skewY(-8)">
+    <rect width="226" height="91" rx="8" fill="#214e65" stroke="#e9f4ec" stroke-width="7"/>
+    <path d="M56 3v85M112 1v88M169 0v88M4 31h215M2 61h220" stroke="#86b7c4" stroke-width="4"/>
+  </g>
+  <path d="M0 530c134-31 252-20 373 10s276 31 427-10v70H0z" fill="#245d43" opacity=".55"/>
+</svg>
